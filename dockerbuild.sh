@@ -7,3 +7,4 @@ sudo apt install -y docker-ce docker-compose
 sudo service docker start
 curl -s https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/docker-compose.yml > xui.yml
 docker-compose -f xui.yml up -d
+rm -f dockerbuild.sh
