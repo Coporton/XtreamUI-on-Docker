@@ -18,9 +18,12 @@ As i've already told
 # Xtreamui On Docker (22F)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/docker-compose.yml > xui.yml
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/dockerbuild.sh
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/start-xtream.sh
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/stop-xtream.sh
 
-docker-compose -f xui.yml up -d
+chmod +x *.sh
 ```
+Then type `./dockerbuild.sh`
 
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
