@@ -16,10 +16,9 @@ As i've already told
 - This version of xtream-ui has outdated files so you must replace them with yours without changing nginx binary files which i've compile or you'll have to simply compile them from begin.
 
 # Xtreamui On Docker (22F)
-[![Install Xtream-UI in 3 Sec ? (Xtream-UI on Docker Container 2020)](https://github.com/theraw/xtreamui-on-docker/raw/master/scr/s1.png)](https://youtu.be/eiDSrA8Z-iw "Install Xtream-UI in 3 Sec ? (Xtream-UI on Docker Container 2020)")
 
 ```bash
-curl -s https://raw.githubusercontent.com/theraw/xtreamui-on-docker/master/docker-compose.yml > xui.yml
+curl -s https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/docker-compose.yml > xui.yml
 
 docker-compose -f xui.yml up -d
 ```
