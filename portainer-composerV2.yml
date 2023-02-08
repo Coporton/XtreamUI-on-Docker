@@ -1,0 +1,20 @@
+version: '2.4'
+services:
+  xui:
+    container_name: xui
+    image: 'theraw/xtreamui-on-docker:xtream-ui-beta2'
+    shm_size: '512MB'
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - '0.0.0.0:25462:25462'
+      - '0.0.0.0:25461:25461'
+      - '0.0.0.0:25463:25463'
+      - '0.0.0.0:25464:25464'
+      - '0.0.0.0:25465:25465'
+      - '0.0.0.0:25500:25500'
+    ulimits:
+     nproc: 65535
+    cap_add:
+     - ALL
+    command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
