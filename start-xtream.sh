@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker-compose -f xui.yml up -d
+docker-compose up -d --remove-orphans

@@ -18,3 +18,17 @@ services:
     cap_add:
      - ALL
     command: ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/supervisord.conf"]
+    volumes:
+      - /opt/xtreamcodes/iptv_xtream_codes/logs:/home/xtreamcodes/iptv_xtream_codes/logs
+      - /opt/xtreamcodes/iptv_xtream_codes/logs/supervisor:/var/log/supervisor
+
+  db:
+    image: mysql:5.7
+    container_name: xui-mysql
+    volumes:
+      - /opt/xtreamcodes/iptv_xtream_codes/mysql:/var/lib/mysql
+    environment:
+      MYSQL_USER: user_iptvpro
+      MYSQL_PASSWORD: BBmNmtXTQGonnOAf
+      MYSQL_DATABASE: xtream_iptvpro
+      MYSQL_ROOT_PASSWORD: xAfAcHSJhr
