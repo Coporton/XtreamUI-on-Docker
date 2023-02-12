@@ -18,9 +18,7 @@ As i've already told
 # Xtreamui On Docker (22F)
 
 ```bash
-wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/dockerbuild.sh
-wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/start-xtream.sh
-wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/master/stop-xtream.sh
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/dockerbuild.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh
 
 chmod +x *.sh
 ```
