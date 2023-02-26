@@ -20,6 +20,8 @@ As i've already told
 ```bash
 wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/database-installer.sh && https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/docker-compose.yml && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh
 
+```
+```bash
 chmod +x *.sh
 ```
 Then run `./dockerbuild.sh`
