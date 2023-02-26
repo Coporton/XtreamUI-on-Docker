@@ -41,10 +41,10 @@ fi
 wget "$SQL_URL" -O /tmp/mysql-database.zip
 
 # Extract the zip file to /opt/
-unzip /tmp/file.zip -d "$TARGET_DIR"
+unzip /tmp/mysql-database.zip -d "$TARGET_DIR"
 
 # Set file and folder permissions to 108:112 recursively
-chmod -R 108:112 "$TARGET_DIR/mysql"
+chown -R 108:112 "$TARGET_DIR/mysql"
 
 # Remove the script file
 rm "$0"
