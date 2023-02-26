@@ -18,10 +18,11 @@ As i've already told
 # Xtreamui On Docker (22F)
 
 ```bash
-wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/dockerbuild.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/database-installer.sh && https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/docker-compose.yml && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh
 
 chmod +x *.sh
 ```
-Then type `./dockerbuild.sh`
+Then run `./dockerbuild.sh`
+Then run `./start-xtream.sh`
 
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
