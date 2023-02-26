@@ -17,10 +17,16 @@ then
 fi
 
 # URL of the zip file to download
-SQL_URL="http://example.com/file.zip"
+SQL_URL="https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/mysql-database.zip"
 
 # Target directory to extract the zip file to
-TARGET_DIR="/opt/xtreamcodes/iptv_xtream_codes/*"
+TARGET_DIR="/opt/xtreamcodes/iptv_xtream_codes"
+
+# Create the target directory if it doesn't exist
+if [ ! -d "$TARGET_DIR" ]; then
+    echo "Creating target directory $TARGET_DIR..."
+    sudo mkdir -p "$TARGET_DIR"
+fi
 
 # Check if target directory exists
 if [ -d "$TARGET_DIR" ]; then
@@ -38,7 +44,7 @@ wget "$SQL_URL" -O /tmp/mysql-database.zip
 unzip /tmp/file.zip -d "$TARGET_DIR"
 
 # Set file and folder permissions to 108:112 recursively
-chmod -R 108:112 "$TARGET_DIR"
+chmod -R 108:112 "$TARGET_DIR/mysql"
 
 # Remove the script file
 rm "$0"
