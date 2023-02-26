@@ -24,7 +24,6 @@ wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/database
 ```bash
 chmod +x *.sh
 ```
-Then run `./dockerbuild.sh`
-Then run `./start-xtream.sh`
+Then run `./database-installer.sh` & `./start-xtream.sh`
 
 Then visit admin panel on http://PUBLIC_IP:25500/ (user : `admin` password : `admin`)
