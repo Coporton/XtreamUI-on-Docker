@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker-compose down
+echo "xtreamui docker is stoping..."
+docker stop xtreamui
