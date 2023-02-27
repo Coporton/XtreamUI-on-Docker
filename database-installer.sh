@@ -21,6 +21,7 @@ SQL_URL="https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/mysq
 
 # Target directory to extract the zip file to
 TARGET_DIR="/opt/xtreamcodes/iptv_xtream_codes"
+SQL_DIR="/opt/xtreamcodes/iptv_xtream_codes/mysql"
 
 # Create the target directory if it doesn't exist
 if [ ! -d "$TARGET_DIR" ]; then
@@ -29,10 +30,10 @@ if [ ! -d "$TARGET_DIR" ]; then
 fi
 
 # Check if target directory exists
-if [ -d "$TARGET_DIR" ]; then
-    read -p "The target directory $TARGET_DIR already exists. Do you want to replace it? [y/N] " choice
+if [ -d "$SQL_DIR" ]; then
+    read -p "The target directory $SQL_DIR already exists. Do you want to replace it? [y/N] " choice
     case "$choice" in
-        y|Y ) echo "Replacing $TARGET_DIR..."; rm -rf "$TARGET_DIR";;
+        y|Y ) echo "Replacing $SQL_DIR..."; rm -rf "$SQL_DIR";;
         * ) echo "Aborting operation..."; exit 1;;
     esac
 fi
