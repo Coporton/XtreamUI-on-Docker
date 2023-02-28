@@ -50,7 +50,7 @@ fi
 
 echo " " 
 echo -e "${GNCOL} ┌─────────────────────────────────────────┐ \e[0m"
-echo -e "${GNCOL} │   Pulling Image From coporton/xtreamui  │ \e[0m"
+echo -e "${GNCOL} │   Pulling image from coporton/xtreamui  │ \e[0m"
 echo -e "${GNCOL} └─────────────────────────────────────────┘ \e[0m"
 echo " "
 
