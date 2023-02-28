@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo " "
 GNCOL='\e[40;38;5;82m' #GNCOL
 
