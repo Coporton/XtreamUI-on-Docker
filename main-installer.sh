@@ -41,9 +41,10 @@ if [[ $choice == "Y" || $choice == "y" ]]; then
     sleep 1
     
 elif [[ $choice == "N" || $choice == "n" ]]; then
-    echo "Exiting the script."
+    echo "Aborting..."
+    exit 1
 else
-    echo "Invalid input. Please try again."
+    echo "Invalid input. Aborting..."
     exit 1
 fi
 
