@@ -31,7 +31,7 @@ fi
 
 # Check if target directory exists
 if [ -d "$SQL_DIR" ]; then
-    read -p "The target directory $SQL_DIR already exists. Do you want to replace it? [y/N] " choice
+    read -p "The target directory $SQL_DIR already exists. Do you want to replace it? [Y/N] " choice
     case "$choice" in
         y|Y ) echo "Replacing $SQL_DIR..."; rm -rf "$SQL_DIR";;
         * ) echo "Aborting operation..."; exit 1;;
