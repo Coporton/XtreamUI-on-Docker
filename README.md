@@ -10,8 +10,6 @@ Please note the following:
 - We are not affiliated with Xtream-UI or Xtreamcodes support.
 - We are freelance developers and only provide services to our clients.
 
-I TRIED TO GIVE YOU A FREE 99% FULL WORKING XTREAM-UI READY TO BE USED. FEEL FREE TO CONTACT ME FOR ANY UPDATES.
-
 ## Installation Instructions
 Before you can use this project, you must install Docker on your system. If you have not already done so, please follow the instructions at https://docs.docker.com/engine/install/ to install Docker.
 
