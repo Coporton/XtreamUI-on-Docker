@@ -25,7 +25,7 @@ echo " "
 sleep 1
 
 cd ~
-wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/database-installer.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh
+wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/database-installer.sh -O database-installer.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/start-xtream.sh -O start-xtream.sh && wget https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/stop-xtream.sh -O stop-xtream.sh
 chmod +x *.sh
 
 read -p "Do you want to run the database installer script? (Y/N) " choice
