@@ -1,4 +1,15 @@
 #!/bin/sh
+echo " "
+GNCOL='\e[40;38;5;82m' #GNCOL
 
-echo "xtreamui docker is stoping..."
-docker stop xtreamui
+CONTAINER_NAME="xtreamui"
+
+docker stop $CONTAINER_NAME
+
+echo " "
+echo -e "${GNCOL} ┌─────────────────────────────────────┐ \e[0m"
+echo -e "${GNCOL} │   xtreamui docker is starting...    │ \e[0m"
+echo -e "${GNCOL} └─────────────────────────────────────┘ \e[0m"
+echo " "
+
+exit 0
