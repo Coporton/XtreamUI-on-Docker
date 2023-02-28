@@ -1,13 +1,12 @@
 ​This project is based on the latest Xtream-UI (R22F) & Ubuntu 18.04 (Bionic) to run on a docker container so Xtream-UI could work in it.
 
-I TRIED TO GIVE YOU A FREE 99% FULL WORKING XTREAM-UI READY TO BE USED. FEEL FREE TO CONTACT ME FOR UPDATES.
+I TRIED TO GIVE YOU A FREE 99% FULL WORKING XTREAM-UI READY TO BE USED. FEEL FREE TO CONTACT ME FOR ANY UPDATES.
 
 ​Must know*
 
-- I'm a ​freelancer for your support.
 - I'm not ​X​tream-​UI support.
 - I'm not ​X​treamcodes support.
-- I ​only do work for my client.
+- I'm a ​freelancer & I ​only do work for my client.
 
 If you don't know about docker don't use this project as simple as that. If you need my help to set up your system please do contact me. 
 
