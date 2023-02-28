@@ -62,7 +62,6 @@ CONTAINER_NAME="xtreamui"
 if docker ps -a | grep -q $CONTAINER_NAME; then
     read -p "The container '$CONTAINER_NAME' already exists. Do you want to remove it and create a new one? (Y/N) " answer
     if [ "$answer" == "y" ] || [ "$answer" == "Y" ]; then
-        # Remove the existing container
         docker stop $CONTAINER_NAME
         docker rm $CONTAINER_NAME
     else
@@ -72,7 +71,7 @@ if docker ps -a | grep -q $CONTAINER_NAME; then
 fi
 
 # Create and run the container
-docker run -d -p 25462:25462 -p 25461:25461 -p 25463:25463 -p 25464:25464 -p 25465:25465 -p 25500:25500 -v /opt/xtreamcodes/iptv_xtream_codes/logs:/home/xtreamcodes/iptv_xtream_codes/logs -v /opt/xtreamcodes/iptv_xtream_codes/mysql:/var/lib/mysql --name $CONTAINER_NAME coporton/xtreamui:latest /usr/bin/supervisord
+docker run -d -p 25462:25462 -p 25461:25461 -p 25463:25463 -p 25464:25464 -p 25465:25465 -p 25500:25500 -v /opt/xtreamui/logs:/home/xtreamcodes/iptv_xtream_codes/logs -v /opt/xtreamui/mysql:/var/lib/mysql --name $CONTAINER_NAME coporton/xtreamui:latest /usr/bin/supervisord
 
 echo " " 
 echo -e "${GNCOL} ┌─────────────────────────────────────────┐ \e[0m"

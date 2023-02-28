@@ -20,8 +20,8 @@ fi
 SQL_URL="https://raw.githubusercontent.com/Coporton/xtreamui-on-docker/main/mysql-database.zip"
 
 # Target directory to extract the zip file to
-TARGET_DIR="/opt/xtreamcodes/iptv_xtream_codes"
-SQL_DIR="/opt/xtreamcodes/iptv_xtream_codes/mysql"
+TARGET_DIR="/opt/xtreamui"
+SQL_DIR="/opt/xtreamui/mysql"
 
 # Create the target directory if it doesn't exist
 if [ ! -d "$TARGET_DIR" ]; then
